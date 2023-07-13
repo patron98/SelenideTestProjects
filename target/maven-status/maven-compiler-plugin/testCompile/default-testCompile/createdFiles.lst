@@ -1,0 +1,13 @@
+com/patron/sauce/pages/CartPage.class
+com/patron/sauce/pages/InventoryPage.class
+com/patron/automationTestingOnline/stepDefinitions/CommonStep.class
+com/patron/automationTestingOnline/pages/LandingPage.class
+com/patron/sauce/SauceDemoRunner.class
+com/patron/automationTestingOnline/stepDefinitions/BookingStep.class
+com/patron/automationTestingOnline/AutomationRunner.class
+com/patron/automationTestingOnline/pages/Common.class
+com/patron/sauce/stepDefinitions/CommonStep.class
+com/patron/sauce/pages/Common.class
+com/patron/sauce/stepDefinitions/LoginStep.class
+com/patron/sauce/pages/LoginPage.class
+com/patron/sauce/stepDefinitions/ShoppingStep.class
