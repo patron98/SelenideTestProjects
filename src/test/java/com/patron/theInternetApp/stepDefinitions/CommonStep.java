@@ -1,6 +1,6 @@
 package com.patron.theInternetApp.stepDefinitions;
 
-import com.patron.candy.pages.Common;
+import com.patron.theInternetApp.pages.Common;
 import io.cucumber.java.en.Given;
 
 public class CommonStep {
