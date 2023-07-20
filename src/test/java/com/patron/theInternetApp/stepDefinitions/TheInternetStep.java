@@ -12,6 +12,10 @@ public class TheInternetStep {
     private final DynamicControls dynamicControls = new DynamicControls();
     private final EntryAdd entryAdd = new EntryAdd();
     private final DownloadPage downloadPage = new DownloadPage();
+    private  final DynamicLoadingPage dynamicLoadingPage = new DynamicLoadingPage();
+    private final FormAuthPage formAuthPage = new FormAuthPage();
+    private final FramePage framePage = new FramePage();
+    private final SliderPage sliderPage = new SliderPage();
 
     @Then("i perform the checkbox test")
     public void checkBoxTest() {
@@ -47,5 +51,25 @@ public class TheInternetStep {
     @Then("i perform the Download Test")
     public void iPerformTheDownloadTest() {
         downloadPage.downloadTest();
+    }
+
+    @Then("i perform the Dynamic Load Test")
+    public void iPerformTheDynamicLoadTest() {
+        dynamicLoadingPage.DynamicLoadTest();
+    }
+
+    @Then("i perform the Form Auth Test with {string} {string}")
+    public void iPerformTheFormAuthTest(String username, String password) {
+        formAuthPage.formAuthPage(username, password);
+    }
+
+    @Then("i perform the Frame Test")
+    public void iPerformTheFrameTest() {
+        framePage.FramesTest();
+    }
+
+    @Then("i perform the Slider Test")
+    public void iPerformTheSliderTest() {
+        sliderPage.sliderTest();
     }
 }

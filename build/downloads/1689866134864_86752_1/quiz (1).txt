@@ -1,0 +1,95 @@
+1.What is the significance of 301 status code?
+
+Ans-301 status code represents permanent redirect from one website
+page to another. It tells the search engine that the old page is
+outdated and the engine has to index the new page URL.
+
+2.How can you log variable values in Postman?
+
+Ans-console.log(pm.variables.get("variable_name")); 
+
+3.What do you understand by status code 201?
+
+Ans-The status code 201 means created when you have successfully created
+a resource using POST or PUT request. It returns a link to a newly created
+resource using the location header.
+
+4.What is the meaning of the status code 304?
+
+Ans-The status code 304 means NOT MODIFIED. It is used to minimize
+the network bandwidth usage in conditional GET requests. 
+The response body should be empty. Headers should have a date, and location, etc.
+
+5.How can we stop executing requests or stop the collection run?
+Ans-postman.setNextRequest(null); 
+
+6. Where are the query parameters stored in a GET request in Postman?
+Ans-In the GET request, the query parameters are stored in the URL in Postman.
+
+7.How can we access a Postman variable?
+Ans-We can access a Postman variable by entering the variable name as {{var}}.
+
+8.In Postman,How can you generate random numbers between the range of 1 to N?
+
+Ans-1st use this snipet[pm.globals.set('randomNumber', Math.floor(Math.random()* N));] 
+Then use this variable in the URL as {{randomNumber}}
+
+9.How can you iterate a request 100 times in Postman?
+
+Ans-By using Collection Runner
+
+10.Which programming language is used for Postman tests?
+
+Ans-JavaScript
+
+11.What is GUID?
+
+Ans-GUID stands for Global Unique Identifier.
+It is basically hexadecimal digits separated by hyphens.
+GUID solves the purpose of uniqueness.
+
+12.How do you set a dynamic variable in Postman?
+
+Ans- $ symbol
+pm.variables.replaceIn('{{$randomFirstName}}').
+
+13.How do you use an assertion in the Postman?
+Ans-
+pm.test("Status code is 200",()=>{
+pm.expect(pm.response.code).to eql(200);});
+
+14.How do you generate a Postman HTML report?
+Ans-1st need to install newman reporter
+Syntex-[$ newman run collection.json -r htmlextra --reporter-htmlextra-export ./results/report.html]
+
+15.How will you upload an image with your request input?
+Ans-Yes, we can upload an image in the body of the POST Method.
+
+Refer below steps,
+
+select Body -> form-data -> Enter your parameter name (image file name) and
+on right side next to value column, there will be dropdown "text, file",
+select File. choose your image file and post it.
+
+16.How will you log variable values in Postman?
+Ans-console.log(pm.variables.get("variable_name"));
+
+17.How do you access postman variables?
+Ans-It can be accessed by using the variable name as:{{variable_name}}
+
+18. How will you stop the execution of upcoming requests or execution of the collections?
+Ans-We can use the below code to stop the execution of the next request:
+pm.setNextRequest(null);
+
+
+
+
+
+
+
+
+
+
+
+
+ 

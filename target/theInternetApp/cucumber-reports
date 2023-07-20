@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="20.877" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="completing The internet app" name="A scenario" time="20.704">
+<testsuite name="Cucumber" time="50.861" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="completing The internet app" name="A scenario" time="50.639">
 <system-out><![CDATA[
 Given i open the website....................................................passed
 Then i perform the checkbox test............................................passed
 Then i perform the Drag and Drop Test.......................................passed
 Then i perform the Dropdown Test............................................passed
 Then i perform the Dynamic Control Test.....................................passed
+Then i perform the Dynamic Load Test........................................passed
 Then i perform the Entry Add Test...........................................passed
 Then i perform the Download Test............................................passed
+Then i perform the Form Auth Test with "tomsmith" "SuperSecretPassword!"....passed
+Then i perform the Frame Test...............................................passed
+Then i perform the Slider Test..............................................passed
 Then i perform the context menu test........................................passed
 ]]></system-out>
 </testcase>
