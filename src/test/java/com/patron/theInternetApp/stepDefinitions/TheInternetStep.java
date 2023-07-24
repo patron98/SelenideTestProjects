@@ -12,10 +12,14 @@ public class TheInternetStep {
     private final DynamicControls dynamicControls = new DynamicControls();
     private final EntryAdd entryAdd = new EntryAdd();
     private final DownloadPage downloadPage = new DownloadPage();
-    private  final DynamicLoadingPage dynamicLoadingPage = new DynamicLoadingPage();
+    private final DynamicLoadingPage dynamicLoadingPage = new DynamicLoadingPage();
     private final FormAuthPage formAuthPage = new FormAuthPage();
     private final FramePage framePage = new FramePage();
     private final SliderPage sliderPage = new SliderPage();
+    private final HoverPage hoverPage = new HoverPage();
+    private final JQueryUIPage jQueryUIPage = new JQueryUIPage();
+    private final JavaScriptAlerts javaScriptAlerts = new JavaScriptAlerts();
+    private final WindowsPage windowsPage = new WindowsPage();
 
     @Then("i perform the checkbox test")
     public void checkBoxTest() {
@@ -71,5 +75,25 @@ public class TheInternetStep {
     @Then("i perform the Slider Test")
     public void iPerformTheSliderTest() {
         sliderPage.sliderTest();
+    }
+
+    @Then("i perform the Hover Test")
+    public void iPerformTheHoverTest() {
+        hoverPage.hoverTest();
+    }
+
+    @Then("i perform the JQuery Test")
+    public void iPerformTheJQueryTest() {
+        jQueryUIPage.jQueryTest();
+    }
+
+    @Then("i perform the JavaScript Alerts Test")
+    public void iPerformTheJavaScriptAlertsTest() {
+        javaScriptAlerts.javaScriptTest();
+    }
+
+    @Then("i perform the windows Test")
+    public void iPerformTheWindowsTest() {
+        windowsPage.windowsTest();
     }
 }

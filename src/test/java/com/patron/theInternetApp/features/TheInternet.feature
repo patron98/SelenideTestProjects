@@ -13,4 +13,8 @@ Feature: completing The internet app
     Then i perform the Form Auth Test with "tomsmith" "SuperSecretPassword!"
     Then i perform the Frame Test
     Then i perform the Slider Test
+    Then i perform the Hover Test
+    Then i perform the JQuery Test
+    Then i perform the JavaScript Alerts Test
+    Then i perform the windows Test
     Then i perform the context menu test

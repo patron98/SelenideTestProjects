@@ -1,0 +1,68 @@
+---->1. How to bind methods or event handlers in JSX callbacks?
+
+Ans :
+-> Binding in Constructor
+-> Public class fields syntax
+-> Arrow functions in callbacks
+Ex :
+a. class Foo extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    console.log('Click happened');
+  }
+  render() {
+    return <button onClick={this.handleClick}>Click Me</button>;
+  }
+}
+
+b. handleClick = () => {
+  console.log('this is:', this)
+}
+
+<button onClick={this.handleClick}>
+  {'Click me'}
+</button>
+
+c.handleClick() {
+    console.log('Click happened');
+}
+render() {
+    return <button onClick={() => this.handleClick()}>Click Me</button>;
+}
+---->2. Difference between “ == “ and “ === “ operators?
+
+var x = 2;
+var y = "2";
+Ans : (x == y)  // Returns true since the value of both x and y is the same
+      (x === y) // Returns false since the typeof x is "number" and typeof y is "string"
+	  
+---->3. Name two types of React component?
+
+Ans : -> Class Component
+	  -> Function Component
+
+
+
+
+---->4.What is Backtick?
+Backticks are an ES6 feature that allows you to create strings in JavaScript. 
+Although backticks are mostly used for HTML or code embedding purposes, they also act similar to single and double quotes. 
+Besides, using backticks makes it easier for string operations.
+---->5.What is axios api?
+Axios: Axios is a Javascript library used to make HTTP requests from node. js or XMLHttpRequests from the browser and it supports the Promise API that is native to JS ES6. 
+It can be used intercept HTTP requests and responses and enables client-side protection against XSRF. 
+It also has the ability to cancel requests.
+Different properties are used for a post request to send data to the endpoint - Axios uses the data property, whereas with fetch we use the body property. 
+We need to serialize data into a JSON string to send data. 
+Axios automatically stringifies data when sending JavaScript objects to the API using the POST method.
+
+
+Example::
+.post("employee/login?employeeName="+email+"&password="+pass)--->Post
+.get("employee/login?employeeName=""&password=")--->Get
+
+
+IONINPUT-width '%' set panlam height 'px' la than vaikanum. 
